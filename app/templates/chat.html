@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Private Messages</h2>
+
+<form method="post">
+  <textarea name="message" placeholder="Write your message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<ul>
+  {% for msg in messages %}
+    <li><strong>{{ msg.sender_email }}:</strong> {{ msg.content }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

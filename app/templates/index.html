@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="about" class="tab-section active">
+  <h2>{{ t.welcome_title }}</h2>
+  <p>{{ t.welcome_text }}</p>
+</section>
+
+<section id="tenant" class="tab-section">
+  <p>{{ t.tenant_text }}</p>
+</section>
+
+<section id="career" class="tab-section">
+  <p>{{ t.career_text }}</p>
+</section>
+
+<section id="documents" class="tab-section">
+  <p>{{ t.documents_text }}</p>
+</section>
+
+<section id="contact" class="tab-section">
+  <h2>{{ t.contact_title }}</h2>
+  <p>
+    Email: bohdanklymov339@gmail.com<br>
+    Phone / WhatsApp: +49 162 2656638<br>
+    GitHub: github.com/BohdanKlymov
+  </p>
+</section>
+
+{% endblock %}
