@@ -13,17 +13,17 @@
   <h1>Bohdan Klymov</h1>
 
   <nav>
-    <a href="{{ url_for('main.index', _anchor='about') }}">About</a>
-    <a href="{{ url_for('main.index', _anchor='tenant') }}">As Tenant</a>
-    <a href="{{ url_for('main.index', _anchor='career') }}">Career</a>
-    <a href="{{ url_for('main.index', _anchor='documents') }}">Documents</a>
-    <a href="{{ url_for('main.index', _anchor='contact') }}">Contact</a>
+    <a href="{{ url_for('main.index', _anchor='about') }}">{{ t.nav_about }}</a>
+    <a href="{{ url_for('main.index', _anchor='tenant') }}">{{ t.nav_tenant }}</a>
+    <a href="{{ url_for('main.index', _anchor='career') }}">{{ t.nav_career }}</a>
+    <a href="{{ url_for('main.index', _anchor='documents') }}">{{ t.nav_documents }}</a>
+    <a href="{{ url_for('main.index', _anchor='contact') }}">{{ t.nav_contact }}</a>
 
     {% if current_user.is_authenticated %}
-      <a href="{{ url_for('main.chat') }}">Chat</a>
-      <a href="{{ url_for('main.logout') }}">Logout</a>
+      <a href="{{ url_for('main.chat') }}">{{ t.nav_chat }}</a>
+      <a href="{{ url_for('main.logout') }}">{{ t.nav_logout }}</a>
     {% else %}
-      <a class="login-btn" href="{{ url_for('main.login') }}">Login</a>
+      <a class="login-btn" href="{{ url_for('main.login') }}">{{ t.nav_login }}</a>
     {% endif %}
 
     <span class="lang-switch">
