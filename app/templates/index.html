@@ -2,20 +2,56 @@
 {% block content %}
 
 <section id="about" class="tab-section active">
-  <h2>{{ t.welcome_title }}</h2>
-  <p>{{ t.welcome_text }}</p>
+  <div class="hero">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+         alt="Bohdan Klymov">
+    <div>
+      <h2>{{ t.welcome_title }}</h2>
+      <p>{{ t.welcome_text }}</p>
+    </div>
+  </div>
 </section>
 
 <section id="tenant" class="tab-section">
+  <h2>{{ t.nav_tenant }}</h2>
   <p>{{ t.tenant_text }}</p>
 </section>
 
 <section id="career" class="tab-section">
+  <h2>{{ t.nav_career }}</h2>
   <p>{{ t.career_text }}</p>
 </section>
 
 <section id="documents" class="tab-section">
+  <h2>{{ t.nav_documents }}</h2>
   <p>{{ t.documents_text }}</p>
+
+  {% if current_user.is_authenticated %}
+    <ul>
+      <li>
+        <a href="{{ url_for('main.documents', filename='cv.pdf') }}">
+          Curriculum Vitae (PDF)
+        </a>
+      </li>
+      <li>
+        <a href="{{ url_for('main.documents', filename='Internship_evaluation_24-25.pdf') }}">
+          Internship Evaluation 2024–2025 (PDF)
+        </a>
+      </li>
+      <li>
+        <a href="{{ url_for('main.documents', filename='Grade_10_school_certificate_07-2025.pdf') }}">
+          Grade 10 School Certificate (PDF)
+        </a>
+      </li>
+      <li>
+        <a href="{{ url_for('main.documents', filename='python2025_RecordOfAchievement.pdf') }}">
+          Python Record of Achievement (PDF)
+        </a>
+      </li>
+    </ul>
+  {% else %}
+    <p><strong>Please log in to view documents.</strong></p>
+  {% endif %}
 </section>
 
 <section id="contact" class="tab-section">

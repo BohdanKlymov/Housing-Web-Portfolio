@@ -1,15 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Private Messages</h2>
 
-<form method="post">
-  <textarea name="message" placeholder="Write your message"></textarea>
-  <button type="submit">Send</button>
-</form>
+<section class="chat-container">
+  <h2>Private Chat</h2>
 
-<ul>
-  {% for msg in messages %}
-    <li><strong>{{ msg.sender_email }}:</strong> {{ msg.content }}</li>
-  {% endfor %}
-</ul>
+  <div class="chat-messages">
+    {% for msg in messages %}
+      <div class="message {% if msg.sender == 'user' %}user{% else %}owner{% endif %}">
+        <span class="sender">
+          {% if msg.sender == 'user' %}
+            You
+          {% else %}
+            Bohdan Klymov
+          {% endif %}
+        </span>
+        <p>{{ msg.content }}</p>
+      </div>
+    {% else %}
+      <p class="empty">No messages yet. Start the conversation.</p>
+    {% endfor %}
+  </div>
+
+  <form method="post" class="chat-form">
+    <input
+      type="text"
+      name="message"
+      placeholder="Write a message…"
+      required
+    >
+    <button type="submit">Send</button>
+  </form>
+</section>
+
 {% endblock %}
