@@ -2,28 +2,28 @@
 <html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
-  <title>Bohdan Klymov – Rental Portfolio</title>
+  <title>Bohdan Klymov – Housing Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
 <header>
   <h1>Bohdan Klymov</h1>
 
   <nav>
-    <button class="tab-btn active" data-target="about">About</button>
-    <button class="tab-btn" data-target="tenant">As Tenant</button>
-    <button class="tab-btn" data-target="career">Career</button>
-    <button class="tab-btn" data-target="documents">Documents</button>
-    <button class="tab-btn" data-target="contact">Contact</button>
+    <a href="{{ url_for('main.index', _anchor='about') }}">About</a>
+    <a href="{{ url_for('main.index', _anchor='tenant') }}">As Tenant</a>
+    <a href="{{ url_for('main.index', _anchor='career') }}">Career</a>
+    <a href="{{ url_for('main.index', _anchor='documents') }}">Documents</a>
+    <a href="{{ url_for('main.index', _anchor='contact') }}">Contact</a>
 
     {% if current_user.is_authenticated %}
       <a href="{{ url_for('main.chat') }}">Chat</a>
       <a href="{{ url_for('main.logout') }}">Logout</a>
     {% else %}
-      <a href="{{ url_for('main.login') }}">Login</a>
+      <a class="login-btn" href="{{ url_for('main.login') }}">Login</a>
     {% endif %}
 
     <span class="lang-switch">
@@ -37,25 +37,10 @@
   {% block content %}{% endblock %}
 </main>
 
-<footer style="text-align:center; padding:2rem; font-size:0.85rem; color:#6b7280;">
+<footer>
   <a href="{{ url_for('main.impressum') }}">Impressum</a> |
   <a href="{{ url_for('main.privacy') }}">Privacy</a>
 </footer>
-
-<script>
-  const buttons = document.querySelectorAll(".tab-btn");
-  const sections = document.querySelectorAll(".tab-section");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      sections.forEach(s => s.classList.remove("active"));
-
-      btn.classList.add("active");
-      document.getElementById(btn.dataset.target).classList.add("active");
-    });
-  });
-</script>
 
 </body>
 </html>

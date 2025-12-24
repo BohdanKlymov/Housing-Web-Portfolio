@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +5,22 @@
 }
 
 :root {
-  --bg-main: #f6f7f5;
-  --bg-card: #ffffff;
-  --text-main: #1f2933;
-  --text-muted: #6b7280;
-  --accent: #3b5bdb;
-  --accent-soft: #e0e7ff;
-  --border-light: #e5e7eb;
+  --bg-main: #233342;
+  --bg-card: #2c3e50;
+
+  --text-main: #f5f5f5;
+  --text-muted: #d1d5db;
+
+  --accent: #ce8054;
+  --accent-strong: #b35340;
+  --accent-dark: #6f3637;
+
+  --border-soft: rgba(255, 255, 255, 0.08);
 }
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
+    Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
 }
@@ -28,114 +31,84 @@ body {
 
 header {
   background-color: var(--bg-card);
-  border-bottom: 1px solid var(--border-light);
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2.2rem;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 header h1 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.6rem;
   align-items: center;
 }
 
-nav a,
-nav button {
-  background: none;
-  border: none;
+nav a {
+  background-color: transparent;
+  border: 1px solid var(--border-soft);
   font-size: 0.95rem;
-  padding: 0.5rem 0.9rem;
+  padding: 0.45rem 0.9rem;
   cursor: pointer;
   color: var(--text-main);
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
+  border-radius: 10px;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-nav button:hover,
 nav a:hover {
-  background-color: var(--accent-soft);
-}
-
-.tab-btn.active {
   background-color: var(--accent);
-  color: white;
+  color: #000;
 }
 
 .lang-switch {
   margin-left: auto;
-  font-size: 0.9rem;
 }
 
 main {
   max-width: 1000px;
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   padding: 0 1.5rem;
 }
 
-.tab-section {
-  display: none;
-  animation: fadeIn 0.25s ease-in;
+section {
+  background-color: var(--bg-card);
+  padding: 2.8rem;
+  border-radius: 18px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
-.tab-section.active {
-  display: block;
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+section p {
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 780px;
+  margin-bottom: 1rem;
 }
 
 .hero {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
-  background-color: var(--bg-card);
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .hero img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 3px solid var(--accent-soft);
-}
-
-.hero h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
-}
-
-.hero p {
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-section h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-section p {
-  max-width: 700px;
-  line-height: 1.6;
-  color: var(--text-muted);
+  object-fit: cover;
+  border: 4px solid var(--accent-strong);
 }
 
 ul {
@@ -144,7 +117,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 ul li a {
@@ -159,39 +132,24 @@ ul li a:hover {
 
 .chat-container {
   background-color: var(--bg-card);
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
+  padding: 2.2rem;
+  border-radius: 16px;
 }
 
 .message {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
-.message.user {
-  font-weight: 500;
+.sender {
+  font-weight: 600;
+  color: var(--accent);
 }
 
-.chat-form {
-  display: flex;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-
-.chat-form input {
-  flex: 1;
-  padding: 0.6rem 0.8rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-light);
-}
-
-.chat-form button {
-  background-color: var(--accent);
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 @media (max-width: 768px) {
@@ -208,3 +166,24 @@ ul li a:hover {
     justify-content: center;
   }
 }
+
+.anchor {
+  scroll-margin-top: 160px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.login-btn {
+  background: #CE8054;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.login-btn:hover {
+  background: #B35340;
+}
+
+

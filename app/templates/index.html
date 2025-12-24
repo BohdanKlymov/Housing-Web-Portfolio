@@ -1,61 +1,102 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section id="about" class="tab-section active">
-  <div class="hero">
-    <img src="{{ url_for('static', filename='images/profile.jpg') }}"
-         alt="Bohdan Klymov">
-    <div>
-      <h2>{{ t.welcome_title }}</h2>
-      <p>{{ t.welcome_text }}</p>
-    </div>
-  </div>
+<section id="about" class="anchor">
+  <h2>Welcome to my portfolio website</h2>
+
+  <p>
+    My name is <strong>Bohdan Klymov</strong> and I created this website to give
+    potential landlords a transparent and personal insight into who I am —
+    both as a person and as a future tenant.
+  </p>
+
+  <p>
+    I will begin my vocational training as a <strong>Software Developer
+    (Fachinformatiker für Anwendungsentwicklung)</strong> in summer 2026 at
+    symmedia GmbH in Bielefeld. For this reason, I am currently looking for
+    suitable accommodation in the city.
+  </p>
+
+  <p>
+    This website goes beyond a traditional application. It allows you to
+    learn more about my background, values, education and motivation in a
+    structured and modern way.
+  </p>
 </section>
 
-<section id="tenant" class="tab-section">
-  <h2>{{ t.nav_tenant }}</h2>
-  <p>{{ t.tenant_text }}</p>
+<section id="tenant" class="anchor">
+  <h2>About me as a tenant</h2>
+
+  <p>
+    I am a calm, reliable and respectful person who values a clean and
+    well-maintained living environment. Order and cleanliness are very
+    important to me, and I treat any apartment as if it were my own.
+  </p>
+
+  <p>
+    I am a non-smoker, do not own pets and prefer a quiet lifestyle. A
+    respectful relationship with neighbors and careful handling of shared
+    spaces are a matter of course for me.
+  </p>
+
+  <p>
+    During my vocational training, I will have secured financial support,
+    ensuring that rent payments are made reliably and on time.
+  </p>
 </section>
 
-<section id="career" class="tab-section">
-  <h2>{{ t.nav_career }}</h2>
-  <p>{{ t.career_text }}</p>
+<section id="career" class="anchor">
+  <h2>Career & Education</h2>
+
+  <p>
+    My interest in technology and programming developed at an early stage.
+    I enjoy logical thinking, structured problem-solving and continuously
+    learning new skills.
+  </p>
+
+  <p>
+    In summer 2026, I will start my apprenticeship as a software developer
+    specializing in application development at symmedia GmbH in Bielefeld.
+    The training program lasts three years and combines practical experience
+    with theoretical education.
+  </p>
+
+  <p>
+    In addition to school and training, I actively educate myself through
+    books, online courses and personal programming projects, especially in
+    Python and web development.
+  </p>
 </section>
 
-<section id="documents" class="tab-section">
-  <h2>{{ t.nav_documents }}</h2>
-  <p>{{ t.documents_text }}</p>
+<section id="documents" class="anchor">
+  <h2>Documents</h2>
+
+  <p>
+    In this section you can find selected documents such as my CV, school
+    certificates and internship evaluations. These documents are provided
+    exclusively for landlords.
+  </p>
 
   {% if current_user.is_authenticated %}
     <ul>
-      <li>
-        <a href="{{ url_for('main.documents', filename='cv.pdf') }}">
-          Curriculum Vitae (PDF)
-        </a>
-      </li>
-      <li>
-        <a href="{{ url_for('main.documents', filename='Internship_evaluation_24-25.pdf') }}">
-          Internship Evaluation 2024–2025 (PDF)
-        </a>
-      </li>
-      <li>
-        <a href="{{ url_for('main.documents', filename='Grade_10_school_certificate_07-2025.pdf') }}">
-          Grade 10 School Certificate (PDF)
-        </a>
-      </li>
-      <li>
-        <a href="{{ url_for('main.documents', filename='python2025_RecordOfAchievement.pdf') }}">
-          Python Record of Achievement (PDF)
-        </a>
-      </li>
+      <li>Curriculum Vitae (CV)</li>
+      <li>School certificate (Grade 10)</li>
+      <li>Internship evaluation</li>
+      <li>Python certificate</li>
     </ul>
   {% else %}
     <p><strong>Please log in to view documents.</strong></p>
   {% endif %}
 </section>
 
-<section id="contact" class="tab-section">
-  <h2>{{ t.contact_title }}</h2>
+<section id="contact" class="anchor">
+  <h2>Contact</h2>
+
+  <p>
+    If you have any questions or would like to get in touch with me directly,
+    feel free to contact me via email, phone or WhatsApp.
+  </p>
+
   <p>
     Email: bohdanklymov339@gmail.com<br>
     Phone / WhatsApp: +49 162 2656638<br>

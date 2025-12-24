@@ -73,13 +73,10 @@ def register():
 
 @main.route("/login", methods=["GET", "POST"])
 def login():
-    if request.method == "POST":
-        user = User.query.filter_by(email=request.form["email"]).first()
-        if user and check_password_hash(user.password, request.form["password"]):
-            login_user(user)
-            return redirect(url_for("main.chat"))
+    lang = get_language()
+    ...
+    return render_template("login.html", t=translations[lang], lang=lang)
 
-    return render_template("login.html")
 
 
 @main.route("/logout")
