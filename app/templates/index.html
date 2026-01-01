@@ -1,65 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section id="about" class="anchor">
-  <div class="hero">
-    <img src="{{ url_for('static', filename='images/profile.jpg') }}"
-         alt="Bohdan Klymov"
-         class="profile-pic">
+<section id="home" class="section">
+  <h1 data-de="Willkommen auf meiner Portfolio-Website"
+      data-en="Welcome to my personal portfolio website"></h1>
 
-    <div>
-      <h2>{{ t.about_title }}</h2>
-
-      <p>{{ t.about_p1 }}</p>
-      <p>{{ t.about_p2 }}</p>
-      <p>{{ t.about_p3 }}</p>
-    </div>
-  </div>
+  <p data-de="Diese Website bietet Ihnen die Möglichkeit, mich als Person und als zukünftigen Mieter umfassend kennenzulernen. Sie finden hier Informationen zu meiner Persönlichkeit, meinem Lebensstil, meinem beruflichen Werdegang sowie alle relevanten Unterlagen an einem Ort."
+     data-en="This website gives you the opportunity to get to know me comprehensively as a person and as a future tenant. You will find information about my personality, lifestyle, professional background, and all relevant documents in one place."></p>
 </section>
 
-<section id="tenant" class="anchor">
-  <h2>{{ t.tenant_title }}</h2>
+<section id="about" class="section">
+  <h1 data-de="Über mich" data-en="About me"></h1>
 
-  <p>{{ t.tenant_p1 }}</p>
-  <p>{{ t.tenant_p2 }}</p>
-  <p>{{ t.tenant_p3 }}</p>
+  <p data-de="Mein Name ist Bohdan Klymov. Ab Sommer 2026 beginne ich eine Ausbildung zum Fachinformatiker in Bielefeld. Ich bin strukturiert, zuverlässig und lege großen Wert auf Ordnung, Stabilität und einen respektvollen Umgang mit meiner Umgebung."
+     data-en="My name is Bohdan Klymov. Starting in summer 2026, I will begin vocational training as an IT specialist in Bielefeld. I am structured, reliable, and value order, stability, and respectful behavior."></p>
+
+  <p data-de="In meiner Freizeit beschäftige ich mich intensiv mit Programmierung, persönlicher Weiterentwicklung, Fachliteratur sowie sportlichem Ausgleich."
+     data-en="In my free time, I focus on programming, personal development, professional literature, and maintaining balance through sports."></p>
 </section>
 
-<section id="career" class="anchor">
-  <h2>{{ t.career_title }}</h2>
+<section id="tenant" class="section">
+  <h1 data-de="Als Mieter" data-en="As a tenant"></h1>
 
-  <p>{{ t.career_p1 }}</p>
-  <p>{{ t.career_p2 }}</p>
-  <p>{{ t.career_p3 }}</p>
+  <p data-de="Ich bin Nichtraucher, habe keine Haustiere und führe einen ruhigen Lebensstil. Meine Wohnung halte ich stets sauber und in einem ausgezeichneten Zustand."
+     data-en="I am a non-smoker, have no pets, and lead a calm lifestyle. I always keep my apartment clean and in excellent condition."></p>
+
+  <p data-de="Während meiner Ausbildung verfüge ich über eine gesicherte finanzielle Unterstützung. Mein Ziel ist ein langfristiges, stabiles Mietverhältnis."
+     data-en="During my training, I have secured financial support. My goal is a long-term and stable rental relationship."></p>
 </section>
 
-<section id="documents" class="anchor">
-  <h2>{{ t.documents_title }}</h2>
+<section id="career" class="section">
+  <h1 data-de="Karriereweg" data-en="Career path"></h1>
 
-  <p>{{ t.documents_p1 }}</p>
-
-  {% if current_user.is_authenticated %}
-    <ul>
-      <li>Curriculum Vitae (CV)</li>
-      <li>School certificate (Grade 10)</li>
-      <li>Internship evaluation</li>
-      <li>Python certificate</li>
-    </ul>
-  {% else %}
-    <p><strong>{{ t.login_to_view }}</strong></p>
-  {% endif %}
+  <p data-de="Mein beruflicher Weg umfasst schulische Bildung, praktische Erfahrungen im IT-Bereich sowie eigenständiges Lernen in Programmierung und Softwareentwicklung."
+     data-en="My career path includes formal education, practical IT experience, and independent learning in programming and software development."></p>
 </section>
 
-<section id="contact" class="anchor">
-  <h2>{{ t.contact_title }}</h2>
+<section id="documents" class="section">
+  <h1 data-de="Unterlagen" data-en="Documents"></h1>
 
-  <p>{{ t.contact_text }}</p>
+  <div class="doc-card"><a href="/documents/cv.pdf" target="_blank">Lebenslauf</a></div>
+  <div class="doc-card"><a href="/documents/Grade_10_school_certificate_07-2025.pdf" target="_blank">Schulzeugnis</a></div>
+  <div class="doc-card"><a href="/documents/Internship_evaluation_24-25.pdf" target="_blank">Praktikumsbewertung</a></div>
+  <div class="doc-card"><a href="/documents/python2025_RecordOfAchievement.pdf" target="_blank">Python Zertifikat</a></div>
+</section>
 
-  <p>
-    Email: bohdanklymov339@gmail.com<br>
-    Phone / WhatsApp: +49 162 2656638<br>
-    GitHub: github.com/BohdanKlymov
-  </p>
+<section id="contact" class="section">
+  <h1 data-de="Kontakt" data-en="Contact"></h1>
+
+  <p>Email: <a href="mailto:bohdanklymov339@gmail.com">bohdanklymov339@gmail.com</a></p>
+  <p>Telefon / WhatsApp: 0162 2656638</p>
+  <p>GitHub: <a href="https://github.com/BohdanKlymov" target="_blank">github.com/BohdanKlymov</a></p>
 </section>
 
 {% endblock %}

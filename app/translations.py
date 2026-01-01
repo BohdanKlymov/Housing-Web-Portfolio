@@ -5,31 +5,24 @@ translations = {
         "nav_career": "Career",
         "nav_documents": "Documents",
         "nav_contact": "Contact",
-        "nav_login": "Login",
-        "nav_logout": "Logout",
-        "nav_chat": "Chat",
 
-        "about_title": "Welcome to my portfolio website",
-        "about_p1": "My name is Bohdan Klymov and I created this website to present myself as a future tenant.",
-        "about_p2": "In summer 2026 I will start my vocational training as a software developer in Bielefeld.",
-        "about_p3": "This website gives landlords a transparent and personal insight into my background.",
+        "hero_title": "Hello, I’m Bohdan Klymov",
+        "hero_sub": "Future software developer & reliable tenant in Bielefeld",
 
-        "tenant_title": "About me as a tenant",
-        "tenant_p1": "I am reliable, calm and value cleanliness and order.",
-        "tenant_p2": "I am a non-smoker, have no pets and respect neighbors.",
-        "tenant_p3": "Rent payments are secured during my training.",
+        "about_title": "About me",
+        "about_text": "I am an organized, responsible and calm person. I value cleanliness, structure and long-term stability. This website was created to give landlords a transparent impression of me beyond a classic application.",
 
-        "career_title": "Career & Education",
-        "career_p1": "I am strongly interested in IT and programming.",
-        "career_p2": "My training starts in 2026 at symmedia GmbH.",
-        "career_p3": "I continuously learn through books and personal projects.",
+        "tenant_title": "Me as a tenant",
+        "tenant_text": "I am a non-smoker, have no pets and live a quiet lifestyle. I treat apartments with care and always respect house rules and neighbors. Reliability and punctual rent payments are a matter of course for me.",
+
+        "career_title": "Education & Career",
+        "career_text": "In summer 2026 I will begin my vocational training as a software developer (Fachinformatiker für Anwendungsentwicklung) at symmedia GmbH in Bielefeld. I am highly motivated to grow professionally and personally.",
 
         "documents_title": "Documents",
-        "documents_p1": "Here you can find selected documents for landlords.",
-        "login_to_view": "Please log in to view documents.",
+        "documents_text": "Below you can find important documents such as my CV, certificates and internship evaluations.",
 
         "contact_title": "Contact",
-        "contact_text": "Feel free to contact me via email or phone."
+        "contact_text": "If you have any questions or would like to contact me, feel free to reach out."
     },
 
     "de": {
@@ -38,30 +31,23 @@ translations = {
         "nav_career": "Karriere",
         "nav_documents": "Dokumente",
         "nav_contact": "Kontakt",
-        "nav_login": "Login",
-        "nav_logout": "Logout",
-        "nav_chat": "Chat",
 
-        "about_title": "Willkommen auf meiner Portfolio-Website",
-        "about_p1": "Mein Name ist Bohdan Klymov und ich habe diese Website erstellt, um mich als zukünftigen Mieter vorzustellen.",
-        "about_p2": "Im Sommer 2026 beginne ich meine Ausbildung als Fachinformatiker in Bielefeld.",
-        "about_p3": "Diese Website ermöglicht Vermietern einen persönlichen Einblick in meine Person.",
+        "hero_title": "Hallo, ich bin Bohdan Klymov",
+        "hero_sub": "Zukünftiger Softwareentwickler & zuverlässiger Mieter in Bielefeld",
 
-        "tenant_title": "Über mich als Mieter",
-        "tenant_p1": "Ich bin zuverlässig, ruhig und lege großen Wert auf Ordnung und Sauberkeit.",
-        "tenant_p2": "Ich bin Nichtraucher, habe keine Haustiere und respektiere die Nachbarschaft.",
-        "tenant_p3": "Während der Ausbildung ist die Mietzahlung finanziell abgesichert.",
+        "about_title": "Über mich",
+        "about_text": "Ich bin eine strukturierte, verantwortungsbewusste und ruhige Person. Ordnung, Sauberkeit und langfristige Stabilität sind mir sehr wichtig. Diese Website soll Vermietern einen transparenten Eindruck von mir geben.",
 
-        "career_title": "Karriere & Ausbildung",
-        "career_p1": "Ich habe ein starkes Interesse an IT und Programmierung.",
-        "career_p2": "Meine Ausbildung beginnt 2026 bei der symmedia GmbH.",
-        "career_p3": "Zusätzlich bilde ich mich selbstständig weiter.",
+        "tenant_title": "Ich als Mieter",
+        "tenant_text": "Ich bin Nichtraucher, habe keine Haustiere und lebe ruhig. Ich gehe sorgfältig mit Wohnraum um und halte mich an Hausregeln. Pünktliche Mietzahlungen sind für mich selbstverständlich.",
+
+        "career_title": "Ausbildung & Werdegang",
+        "career_text": "Im Sommer 2026 beginne ich meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei der symmedia GmbH in Bielefeld. Ich bin motiviert, mich fachlich und persönlich weiterzuentwickeln.",
 
         "documents_title": "Dokumente",
-        "documents_p1": "Hier finden Sie ausgewählte Unterlagen für Vermieter.",
-        "login_to_view": "Bitte loggen Sie sich ein, um Dokumente zu sehen.",
+        "documents_text": "Hier finden Sie wichtige Unterlagen wie Lebenslauf, Zeugnisse und Praktikumsbewertungen.",
 
         "contact_title": "Kontakt",
-        "contact_text": "Sie können mich gerne per E-Mail oder Telefon kontaktieren."
+        "contact_text": "Bei Fragen können Sie mich jederzeit kontaktieren."
     }
 }
