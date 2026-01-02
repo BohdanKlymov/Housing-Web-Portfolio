@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Bohdan Klymov – Mieterportfolio</title>
+  <title>Bohdan Klymov</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
@@ -12,17 +12,18 @@
   <div class="logo">Bohdan Klymov</div>
 
   <nav>
-    <button onclick="showSection('home')">Start</button>
-    <button onclick="showSection('about')">Über mich</button>
-    <button onclick="showSection('tenant')">Als Mieter</button>
-    <button onclick="showSection('career')">Karriereweg</button>
-    <button onclick="showSection('documents')">Unterlagen</button>
-    <button onclick="showSection('contact')">Kontakt</button>
+    <button onclick="showSection('home')" data-de="Start" data-en="Home"></button>
+    <button onclick="showSection('about')" data-de="Über mich" data-en="About"></button>
+    <button onclick="showSection('tenant')" data-de="Als Mieter" data-en="As Tenant"></button>
+    <button onclick="showSection('career')" data-de="Karriereweg" data-en="Career"></button>
+    <button onclick="showSection('documents')" data-de="Unterlagen" data-en="Documents"></button>
+    <button onclick="showSection('contact')" data-de="Kontakt" data-en="Contact"></button>
   </nav>
 
-  <div class="lang-switch">
+  <div class="controls">
     <button onclick="setLanguage('de')">DE</button>
     <button onclick="setLanguage('en')">EN</button>
+    <button onclick="toggleTheme()">🌗</button>
   </div>
 </header>
 

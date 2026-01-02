@@ -2,55 +2,116 @@
 {% block content %}
 
 <section id="home" class="section">
-  <h1 data-de="Willkommen auf meiner Portfolio-Website"
-      data-en="Welcome to my personal portfolio website"></h1>
+  <div class="hero">
+    <img src="{{ url_for('static', filename='img/profile.jpeg') }}" alt="Bohdan Klymov">
 
-  <p data-de="Diese Website bietet Ihnen die Möglichkeit, mich als Person und als zukünftigen Mieter umfassend kennenzulernen. Sie finden hier Informationen zu meiner Persönlichkeit, meinem Lebensstil, meinem beruflichen Werdegang sowie alle relevanten Unterlagen an einem Ort."
-     data-en="This website gives you the opportunity to get to know me comprehensively as a person and as a future tenant. You will find information about my personality, lifestyle, professional background, and all relevant documents in one place."></p>
+    <div>
+      <h1 data-de="Willkommen"
+          data-en="Welcome"></h1>
+
+      <p data-de="Diese Website ermöglicht es Ihnen, mich als zukünftigen Mieter und als Person umfassend kennenzulernen. Ziel ist es, Ihnen ein klares, ehrliches und vertrauenswürdiges Bild von mir zu vermitteln, sodass Sie bereits im Vorfeld einschätzen können, ob ich gut zu Ihrer Immobilie passe. Ich suche eine Wohnung ab August 2026."
+         data-en="This website allows you to get to know me comprehensively as a future tenant and as a person. The goal is to provide a clear, honest, and trustworthy impression so that you can assess in advance whether I am a good fit for your property. I am looking for an apartment from August 2026."></p>
+    </div>
+  </div>
 </section>
 
 <section id="about" class="section">
   <h1 data-de="Über mich" data-en="About me"></h1>
 
-  <p data-de="Mein Name ist Bohdan Klymov. Ab Sommer 2026 beginne ich eine Ausbildung zum Fachinformatiker in Bielefeld. Ich bin strukturiert, zuverlässig und lege großen Wert auf Ordnung, Stabilität und einen respektvollen Umgang mit meiner Umgebung."
-     data-en="My name is Bohdan Klymov. Starting in summer 2026, I will begin vocational training as an IT specialist in Bielefeld. I am structured, reliable, and value order, stability, and respectful behavior."></p>
+  <p data-de="Ich bin aktuell volljährig. Ab Sommer 2026 beginne ich eine Ausbildung zum Fachinformatiker bei der symmedia GmbH in Bielefeld und plane, meinen Lebensmittelpunkt langfristig in dieser Stadt aufzubauen."
+     data-en="I am currently of legal age. Starting in summer 2026, I will begin vocational training as an IT specialist at symmedia GmbH in Bielefeld and plan to establish my long-term base in this city."></p>
 
-  <p data-de="In meiner Freizeit beschäftige ich mich intensiv mit Programmierung, persönlicher Weiterentwicklung, Fachliteratur sowie sportlichem Ausgleich."
-     data-en="In my free time, I focus on programming, personal development, professional literature, and maintaining balance through sports."></p>
+  <p data-de="Ordnung, Struktur und ein geregelter Alltag sind mir sehr wichtig. Ich bin ruhig, ausgeglichen und verantwortungsbewusst und lege großen Wert auf Stabilität, Verlässlichkeit und ein respektvolles Miteinander."
+     data-en="Order, structure, and a well-organized daily routine are very important to me. I am calm, balanced, and responsible and value stability, reliability, and respectful interaction."></p>
+
+  <p data-de="In meiner Freizeit beschäftige ich mich gerne mit technischen Themen, Lernen, persönlicher Weiterentwicklung und digitalen Projekten. Partys oder laute Aktivitäten gehören nicht zu meinem Alltag, weshalb ich ein ruhiger und angenehmer Nachbar bin."
+     data-en="In my free time, I enjoy technical topics, learning, personal development, and digital projects. Parties or loud activities are not part of my daily life, which makes me a calm and pleasant neighbor."></p>
+
+  <p data-de="Eine Wohnung sehe ich als Rückzugsort, an dem ich mich konzentrieren, erholen und auf meine beruflichen Ziele fokussieren kann. Ein langfristiges Mietverhältnis ist mir sehr wichtig."
+     data-en="I see an apartment as a place of retreat where I can focus, relax, and work toward my professional goals. A long-term rental relationship is very important to me."></p>
 </section>
 
 <section id="tenant" class="section">
   <h1 data-de="Als Mieter" data-en="As a tenant"></h1>
 
-  <p data-de="Ich bin Nichtraucher, habe keine Haustiere und führe einen ruhigen Lebensstil. Meine Wohnung halte ich stets sauber und in einem ausgezeichneten Zustand."
-     data-en="I am a non-smoker, have no pets, and lead a calm lifestyle. I always keep my apartment clean and in excellent condition."></p>
+  <p data-de="Als Mieter bin ich zuverlässig, sorgfältig und pflichtbewusst. Sauberkeit, Ordnung sowie der respektvolle Umgang mit der Wohnung und gemeinschaftlich genutzten Flächen sind für mich selbstverständlich."
+     data-en="As a tenant, I am reliable, careful, and conscientious. Cleanliness, order, and respectful handling of the apartment and shared areas are a given for me."></p>
 
-  <p data-de="Während meiner Ausbildung verfüge ich über eine gesicherte finanzielle Unterstützung. Mein Ziel ist ein langfristiges, stabiles Mietverhältnis."
-     data-en="During my training, I have secured financial support. My goal is a long-term and stable rental relationship."></p>
+  <p data-de="Ich bin Nichtraucher, trinke keinen Alkohol, habe keine Haustiere und plane auch keine Anschaffung. Die pünktliche und regelmäßige Zahlung der Miete hat für mich höchste Priorität."
+     data-en="I am a non-smoker, do not drink alcohol, have no pets, and do not plan to get any. Paying the rent on time and regularly is my highest priority."></p>
+
+  <p data-de="Während meiner Ausbildungszeit verfüge ich über eine gesicherte finanzielle Unterstützung. Bei Bedarf stelle ich gerne entsprechende Nachweise oder weitere Unterlagen zur Verfügung."
+     data-en="During my training, I have secured financial support. If required, I am happy to provide relevant proof or additional documents."></p>
+
+  <p data-de="Ein gutes Verhältnis zu Nachbarn und Vermietern ist mir sehr wichtig. Ich melde Probleme oder Schäden frühzeitig und lege großen Wert auf offene und respektvolle Kommunikation."
+     data-en="A good relationship with neighbors and landlords is very important to me. I report any issues or damages early and value open and respectful communication."></p>
 </section>
 
 <section id="career" class="section">
   <h1 data-de="Karriereweg" data-en="Career path"></h1>
 
-  <p data-de="Mein beruflicher Weg umfasst schulische Bildung, praktische Erfahrungen im IT-Bereich sowie eigenständiges Lernen in Programmierung und Softwareentwicklung."
-     data-en="My career path includes formal education, practical IT experience, and independent learning in programming and software development."></p>
+  <p data-de="Ab Sommer 2026 beginne ich eine dreijährige Ausbildung zum Fachinformatiker bei der symmedia GmbH in Bielefeld. Mein beruflicher Weg ist klar strukturiert und langfristig ausgerichtet."
+     data-en="Starting in summer 2026, I will begin a three-year vocational training program as an IT specialist at symmedia GmbH in Bielefeld. My career path is clearly structured and long-term oriented."></p>
+
+  <p data-de="Mein Werdegang umfasst schulische Bildung, erste IT-Praktika sowie eigenständiges Lernen in Bereichen wie Softwareentwicklung, IT-Systeme und digitales Arbeiten."
+     data-en="My background includes formal education, initial IT internships, and self-directed learning in areas such as software development, IT systems, and digital work."></p>
+
+  <p data-de="Nach Abschluss meiner Ausbildung strebe ich eine langfristige berufliche Perspektive in Bielefeld an. Diese Planung spiegelt sich auch in meinem Wunsch nach einem dauerhaften Mietverhältnis wider."
+     data-en="After completing my training, I aim for a long-term professional perspective in Bielefeld. This planning is also reflected in my desire for a permanent rental relationship."></p>
 </section>
 
 <section id="documents" class="section">
   <h1 data-de="Unterlagen" data-en="Documents"></h1>
 
-  <div class="doc-card"><a href="/documents/cv.pdf" target="_blank">Lebenslauf</a></div>
-  <div class="doc-card"><a href="/documents/Grade_10_school_certificate_07-2025.pdf" target="_blank">Schulzeugnis</a></div>
-  <div class="doc-card"><a href="/documents/Internship_evaluation_24-25.pdf" target="_blank">Praktikumsbewertung</a></div>
-  <div class="doc-card"><a href="/documents/python2025_RecordOfAchievement.pdf" target="_blank">Python Zertifikat</a></div>
+  <div class="documents-grid">
+    <div class="doc-card">
+      <a href="/documents/cv.pdf" target="_blank"
+         data-de="Lebenslauf"
+         data-en="Curriculum Vitae">
+      </a>
+    </div>
+
+    <div class="doc-card">
+      <a href="/documents/Grade_10_school_certificate_07-2025.pdf" target="_blank"
+         data-de="Schulzeugnis"
+         data-en="School Certificate">
+      </a>
+    </div>
+
+    <div class="doc-card">
+      <a href="/documents/Internship_evaluation_24-25.pdf" target="_blank"
+         data-de="Praktikumsbewertung"
+         data-en="Internship Evaluation">
+      </a>
+    </div>
+
+    <div class="doc-card">
+      <a href="/documents/python2025_RecordOfAchievement.pdf" target="_blank"
+         data-de="Python Zertifikat"
+         data-en="Python Certificate">
+      </a>
+    </div>
+  </div>
 </section>
+
+
 
 <section id="contact" class="section">
   <h1 data-de="Kontakt" data-en="Contact"></h1>
 
-  <p>Email: <a href="mailto:bohdanklymov339@gmail.com">bohdanklymov339@gmail.com</a></p>
-  <p>Telefon / WhatsApp: 0162 2656638</p>
-  <p>GitHub: <a href="https://github.com/BohdanKlymov" target="_blank">github.com/BohdanKlymov</a></p>
+  <p>
+    Email:
+    <a href="mailto:bohdanklymov339@gmail.com">bohdanklymov339@gmail.com</a>
+  </p>
+
+  <p>
+    GitHub:
+    <a href="https://github.com/BohdanKlymov" target="_blank">
+      github.com/BohdanKlymov
+    </a>
+  </p>
+
+  <p>WhatsApp / Telefon: 0162 2656638</p>
 </section>
 
 {% endblock %}

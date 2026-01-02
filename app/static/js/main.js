@@ -19,7 +19,14 @@ function showSection(id) {
   requestAnimationFrame(() => target.classList.add("active"));
 }
 
+function toggleTheme() {
+  const theme = document.body.dataset.theme === "dark" ? "" : "dark";
+  document.body.dataset.theme = theme;
+  localStorage.setItem("theme", theme);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.dataset.theme = localStorage.getItem("theme") || "";
   setLanguage("de");
   showSection("home");
 });
