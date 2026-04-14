@@ -10,7 +10,9 @@ The website is publicly accessible via link and designed to complement tradition
 ## Live Demo
 
 🔗 **Website:**  
-https://bohdan-klymov.onrender.com
+https://bohdan-klymov.onrender.com - a free housting and long render
+
+https://bohdan-klymov-housing.up.railway.app - a paid hosting with fast rendering for several months
 
 ---
 
